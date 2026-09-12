@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# install sensor lib
+sudo apt update
+sudo apt install iio-sensor-proxy
 # install fix
 sudo cp files/61-sensor.hwdb /etc/udev/hwdb.d/
 # load fix in current session without reboot
